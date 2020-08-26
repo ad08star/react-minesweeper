@@ -1,0 +1,26 @@
+.clear {
+  clear: both;
+  content: "";
+}
+
+.game {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  background: rgb(126, 207, 245);
+  height: 1000px;
+}
+
+.cell {
+  background: #fff;
+  border: 1px solid black;
+  float: left;
+  height: 30px;
+  text-align: center;
+  width: 30px;
+  cursor: pointer;
+}
+
+.hidden {
+  background: lightgray;
+}
