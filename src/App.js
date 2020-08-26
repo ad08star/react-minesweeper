@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import "./App.css";
 import Board from "./components/Board/Board";
 import { Row, Col, Button } from "react-bootstrap";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 class App extends Component {
   state = {
@@ -48,7 +49,10 @@ class App extends Component {
     } = this.state;
     return (
       <div className="game">
-        <h2 className="text-center">Minesweeper</h2>
+        <h2 className="text-center">
+          <FontAwesomeIcon icon="bomb" /> Minesweeper{" "}
+          <FontAwesomeIcon icon="flag" style={{ color: "red" }} />
+        </h2>
         <Row className="justify-content-md-center mt-3">
           <Col xs lg="2">
             <label>Enter Rows</label>
